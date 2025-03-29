@@ -23,8 +23,8 @@ const metadata = {
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
-        { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: 'https://github.com/onwidget' },
+        //{ text: 'Blog', href: '#blog' },
+        //{ text: 'Github', href: 'https://github.com/onwidget' },
       ]}
       isSticky
       showToggleTheme
@@ -40,7 +40,9 @@ const metadata = {
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I'm a Mechanical Engineer passionate about designing great products. <br /> I specialize in difficult problems and design solutions that are simple, elegant, and easy to use.
+      Engineer by training, management consultant by profession, and a true tinkerer at heart.
+      Admirer of the beautiful things we build, the inspiring ideas we share, and the greatness we can reach together.
+      I believe in shaping the world with courage, honor, and conviction.
     </Fragment>
   </Hero>
 
@@ -84,16 +86,21 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        I have a habit of taking things apart — sometimes literally, sometimes just in my head —
+        always chasing the 'why' behind how things work.
       </p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        I've always been drawn to well-articulated ideas, timeless craftsmanship,
+        and the unrelenting pursuit of greatness.
       </p>
       <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
+        <p>
+        Every man needs guiding principles. Some of mine are:
+        build with intention, lead with conviction, and fuel the fire of curiosity.
+      </p>
+      <br />
+      <p>I believe the best things stand the test of time because someone cared enough to make them right.</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -109,14 +116,14 @@ const metadata = {
     items={[
       {
         title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+          'Management Consultant <br /> <span class="font-normal">Capgemini Invent, Finland</span> <br /> <span class="text-sm font-normal">2025 - Present</span>',
+        description: `Made the company lots of money. <br /> Did some other stuff. <br /> Made some friends. <br /> Learned a lot.`,
         icon: 'tabler:briefcase',
       },
       {
         title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+          'Mechanical Engineer <br /> <span class="font-normal">ABB Marine, Finland</span> <br /> <span class="text-sm font-normal">2024 - 2025</span>',
+        description: `Designed some cool stuff. <br /> Made some friends. <br /> Learned a lot. <br /> Left to pursue things with more velocity.`,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -130,11 +137,13 @@ const metadata = {
     title="Education"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        title: `MSc Mechanical Engineering <br /> <span class="font-normal">Aalto University, Finland</span> <br /> <span class="text-sm font-normal">2022 - 2024</span>`,
+        description: `Major: Product Development. <br /> Minor: Mechatronics. <br /> Graduated with honors.`,
         icon: 'tabler:school',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        title: `BSc Mechanical & Structural Engineering <br /> <span class="font-normal">Aalto University, Finland</span> <br /> <span class="text-sm font-normal">2019 - 2022</span>`,
+        description: `Major: Mechanical Engineering. <br /> Minor: Intelligent Systems in Engineering. <br /> Graduated with honors.`,
         icon: 'tabler:school',
       },
     ]}
