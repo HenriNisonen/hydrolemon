@@ -8,6 +8,7 @@ import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import { getPermalink } from '~/utils/permalinks';
+import portraitImage from '~/assets/images/zoomed in portrait.jpg';
 
 const metadata = {
   title: 'Henri Nisonen',
@@ -22,7 +23,9 @@ const metadata = {
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
-        { text: 'Porfolio', href: '#porfolio' },
+        { text: 'Skills', href: '#skills' },
+        { text: 'Portfolio', href: '#porfolio' },
+        { text: 'Testimonials', href: '#testimonials' },
         //{ text: 'Blog', href: '#blog' },
         //{ text: 'Github', href: 'https://github.com/onwidget' },
       ]}
@@ -78,9 +81,11 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      src: portraitImage,
+      alt: 'Henri Nisonen Portrait',
       loading: 'eager',
+      width: 2307,
+      height: 2307
     }}
   >
     <Fragment slot="content">
@@ -153,6 +158,7 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
+    id="skills"
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
     columns={3}
@@ -313,56 +319,10 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
-    columns={3}
-    defaultIcon="tabler:point-filled"
-    items={[
-      {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
-      },
-      {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
-      },
-      {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
-      {
-        title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
-      },
-      {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
-      },
-      {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
-      },
-      {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
-      },
-    ]}
-  />
-
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
+    id="testimonials"
     title="Client testimonials"
     subtitle="Discover what clients have to say about their experiences working with me."
     testimonials={[
