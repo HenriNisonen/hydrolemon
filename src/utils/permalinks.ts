@@ -10,7 +10,7 @@ const createPath = (...params: string[]) => {
     .map((el) => trimSlash(el))
     .filter((el) => !!el)
     .join('/');
-  return '/' + paths + (SITE.trailingSlash && paths ? '/' : '');
+  return paths + (SITE.trailingSlash && paths ? '/' : '');
 };
 
 const BASE_PATHNAME = SITE.base || '/';
@@ -94,14 +94,17 @@ export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);
 
 /** */
 export const getAsset = (path: string): string =>
-  '/' +
-  [BASE_PATHNAME, path]
-    .map((el) => trimSlash(el))
-    .filter((el) => !!el)
-    .join('/');
+  BASE_PATHNAME + path.replace(/^\//, '');
 
 /** */
-const definitivePermalink = (permalink: string): string => createPath(BASE_PATHNAME, permalink);
+const definitivePermalink = (permalink: string): string => {
+  // If the permalink is already an absolute URL or starts with # or javascript:, return as is
+  if (permalink.startsWith('http://') || permalink.startsWith('https://') || permalink.startsWith('#') || permalink.startsWith('javascript:')) {
+    return permalink;
+  }
+  // Otherwise, prepend the base pathname
+  return BASE_PATHNAME + permalink.replace(/^\//, '');
+};
 
 /** */
 export const applyGetPermalinks = (menu: object = {}) => {
