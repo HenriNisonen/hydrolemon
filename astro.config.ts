@@ -25,10 +25,6 @@ export default defineConfig({
   output: 'static',
   base: '/hydrolemon/',
   site: 'https://nisonen.github.io/hydrolemon',
-  build: {
-    assets: '_astro',
-    assetsPrefix: '/hydrolemon/'
-  },
 
   integrations: [
     tailwind({
