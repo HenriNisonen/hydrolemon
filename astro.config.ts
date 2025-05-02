@@ -24,7 +24,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 export default defineConfig({
   output: 'static',
   base: '/',
-  site: 'https://nisonen.github.io/hydrolemon',
+  site: 'https://henrinisonen.github.io/hydrolemon',
 
   integrations: [
     tailwind({
