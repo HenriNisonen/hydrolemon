@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://henrinisonen.github.io/hydrolemon/sitemap-index.xml
