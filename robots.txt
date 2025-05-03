@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://henrinisonen.github.io/hydrolemon/sitemap-index.xml
+Sitemap: https://nisonen.com/sitemap-index.xml
