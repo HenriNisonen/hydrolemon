@@ -22,9 +22,9 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  output: 'static',
-  base: '/hydrolemon/',
-  site: 'https://henrinisonen.github.io',
+  //output: 'static',
+  // base: '/hydrolemon/',
+  site: 'https://nisonen.com',
 
   integrations: [
     tailwind({
