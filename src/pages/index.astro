@@ -7,7 +7,6 @@ import Content from '~/components/widgets/Content.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import { getPermalink } from '~/utils/permalinks';
 import portraitImage from '~/assets/images/zoomed in portrait.jpg';
 
 const metadata = {
@@ -40,7 +39,7 @@ const metadata = {
     id="hero"
     title="Henri Nisonen"
     tagline="Site under construction"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+    actions={[{ variant: 'primary', text: 'Hire me', href: '#' }]}
   >
     <Fragment slot="subtitle">
       Engineer by training, management consultant by profession, and a true tinkerer at heart.
